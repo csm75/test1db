@@ -1,0 +1,12 @@
+CREATE TABLE [WebApp].[PatientCreditTU]
+(
+[id] [int] NOT NULL IDENTITY(1, 1),
+[patient_id] [int] NOT NULL,
+[created_at] [datetime] NULL,
+[updated_at] [datetime] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [WebApp].[PatientCreditTU] ADD CONSTRAINT [PK_PatientCreditTU] PRIMARY KEY CLUSTERED  ([id]) ON [PRIMARY]
+GO
+ALTER TABLE [WebApp].[PatientCreditTU] ADD CONSTRAINT [FK_PatientCreditTU_Patient] FOREIGN KEY ([patient_id]) REFERENCES [WebApp].[Patient] ([id]) ON DELETE CASCADE ON UPDATE CASCADE
+GO

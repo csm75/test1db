@@ -1,0 +1,9 @@
+CREATE SCHEMA [WePay]
+AUTHORIZATION [dbo]
+GO
+GRANT DELETE ON SCHEMA:: [WePay] TO [katsiaryna]
+GO
+GRANT UPDATE ON SCHEMA:: [WePay] TO [katsiaryna]
+GO
+GRANT DELETE ON SCHEMA:: [WePay] TO [sergey]
+GO

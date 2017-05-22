@@ -1,0 +1,2 @@
+CREATE USER [katsiaryna] WITHOUT LOGIN
+GO

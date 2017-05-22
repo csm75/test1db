@@ -1,0 +1,2 @@
+CREATE USER [vsevolod] WITHOUT LOGIN
+GO
